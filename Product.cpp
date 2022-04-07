@@ -41,6 +41,11 @@ public:
 	void setNumber(int nNumber) {
 		number = nNumber;
 	}
-
+	void setExpDate(std::tm nDate) {
+		expDate = nDate;
+	}
+	void setIngredients(std::vector<ingredient>nIngredients) {
+		ingredients = nIngredients;
+	}
 };
 
