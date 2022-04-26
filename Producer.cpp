@@ -1,6 +1,7 @@
 #include <string>
 #include "Producer.h"
-	//constructors
+	
+//constructors
 
 
 producer::producer() {
@@ -25,3 +26,13 @@ void producer::setAdress(std::string newAdress) {
 void producer::setName(std::string newName) {
 	name = newName;
 };
+
+// operators 
+bool producer::operator==(const producer& second_produer) const {
+	return name == second_produer.name && adress == second_produer.adress;
+}
+bool producer::operator!=(const producer& second_producer) const
+{
+	return !(*this == second_producer);
+}
+
